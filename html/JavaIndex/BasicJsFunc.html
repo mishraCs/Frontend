@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyJavaScript</title>
+</head>
+
+<body>
+
+    <!-- <h1>convert value from farenhight to celcious || celcious to farenhight</h1>
+
+    <input  type="number" name="" id="data" /> c  <br> <br>
+    <button onclick="convert()">convert </button>
+    <h2 id="ans"></h2> -->
+
+    <script>
+        // 05 /08 / 2023;
+
+//         console.log("Student Name : Aptron ");
+//         let hindi = eval(prompt("enter subject hindi marks"));
+//         let eng = eval(prompt("enter subject eng marks"));
+//         let math = eval(prompt("enter subject math marks"));
+//         console.log(`Marks in Hindi = ${hindi}`);
+//         console.log(`Marks in English = ${eng}`);
+//         console.log(`Marks in Math = ${hindi}`);
+//         let total = hindi + eng + math;
+//         console.log(`Total marks : ${total}`)
+//         let average = total / 3;
+//         console.log(`Average = ${average}`)
+//         if (average >= 40) {
+//             console.log("Result : Pass");
+//         } else {
+//             console.log(" Result : Faill");
+//         }
+//         if (average <= 40) {
+//             console.log(`Grade : D Grade.`);
+//         } else if (average > 40 && average <= 60) {
+//             console.log(`Grade : C Grade.`);
+//         } else if (average > 60 && average <= 70) {
+//             console.log(`Grade : B Grade.`);
+//         } else if (average > 70 && average <= 100) {
+//             console.log(`Grade : A Grade`);
+//         }
+
+//         let num1 = eval(prompt("enter 1st no."));
+//         let num2 = eval(prompt("enter 2nd no."));
+//         if (num1 > num2) {
+//             console.log(`${num1} is greatest no.`);
+//         } else {
+//             console.log(`${num2} is greatest no.`);
+
+//         }
+
+
+// ======================================================
+
+//           06/08/2023;
+
+//           let meter_no = (prompt("Enter meter no."));
+//           let cname = prompt("Enter your consumer name : ");
+//           let new_reading = eval(prompt("Enter new reading"));
+//           let old_reading = eval(prompt("Enter old reading"));
+//           let unit = new_reading - old_reading;
+//           if (unit<=200){
+//             bill = unit*2;
+//           } if (unit>200 && unit<=400){
+//             let c = unit-200;
+//              bill = 200*2+c*3;
+//           } else if  (unit>400) {
+//               let c = unit-400;
+//               bill = 200*2 + 200*3 + c*5
+//           }
+//           console.log(`Meter no. : ${meter_no}`);
+//           console.log(`Consumer name : ${cname}`);
+//           console.log(`Unit : ${unit}`);
+//           console.log(`Bill : ${bill}`);
+
+// ================Salary=============================
+//         ename
+//         post
+//         basicpay
+
+//         hra
+//           a) basicpay 1 to 15000 5%
+//           b) basicpay 15001 to 25000 10%
+//           c) basicpay >25000 20%
+
+//           da == 8%
+//           pf == 13.5%
+//           esi == 0.75%
+
+//           net salary = basicpay+hra+da-pf-esi
+//         statment experation
+// =========================================================
+//         function percentValue(pay, percent) {
+//             return pay * percent / 100;
+//         }
+//         let ename = "Mohan";
+//         let post = "Web Developer";
+//         let basicpay = eval(prompt(`Enter the value of basicpay`));
+//         if (basicpay <= 0) {
+//             alert('Basic pay should be more than 0');
+//             location.reload();
+//         }
+//         let da = percentValue(basicpay, 8);//(`${basicpay}%8`);
+//         console.log(`Da = ${da}`);
+//         let pf = percentValue(basicpay, 13.5);
+//         console.log(`Pf = ${pf}`);
+//         let esi = percentValue(basicpay, 0.75);
+//         console.log(`ESI = ${esi}`);
+//         let hra = 0;
+//         if (basicpay <= 15000) {
+//             hra = percentValue(basicpay, 5);
+//         } else if (basicpay > 15000 && basicpay <= 25000) {
+//             hra = percentValue(basicpay, 10);
+//         } else {
+//             hra = percentValue(basicpay, 20);
+//         }
+//         console.log(hra);
+//         let netsalary = ((basicpay + da + hra) - (pf + esi));
+//         console.log(`Net salary = ${netsalary}`);
+
+//     let Table2 = 2;
+//     while (Table2 <=20){
+//         console.log(Table2);
+//         Table2 = Table2+2;
+//     }
+
+
+// ==========to write a program of any table============
+
+//     let user = eval(prompt("Enter the value of table"));
+//     let constants = 1;
+//     let tvs = aae = aao = aes = aos =  0;
+
+
+//     while (constants<=10)
+//     {
+//        let k = constants*user;
+//         console.log(k);
+//         if (k%2==0) {
+//            aes = aes+k
+//             aae++;
+//         } else {
+//             aos = aos+k
+//             aao++;
+//         }
+//         tvs = tvs+k;
+//         constants++;
+//      }
+//      console.log(`total value sum :${tvs}`);
+//      console.log(`adition of all even :${aae}`);
+//      console.log(`adition of all odd : ${aao}`);
+//      console.log(`all even of sum : ${aes}`);
+//      console.log(`all odd of sum : ${aos}`);
+
+// ================== prime and imprime=================
+
+//  function isPrime(number) {
+//   if (number <= 1) {
+//     return false;
+//   }
+
+//   for (let i = 2; i <= Math.sqrt(number); i++) {
+//     if (number % i === 0){
+//       return false;
+//     }
+//   }
+//   return true;
+//  }
+//  const num = eval(prompt(`Enter a value to check prime or not.`));
+//  if (isPrime(num)){
+//   console.log(`${num} is a prime number.`);
+//  } else{
+//   console.log(`${num} is not a prime number.`);
+//  }
+
+
+// for (a=10; a>=1; a--){
+//   for (b=a; b>=1; b--){
+//     document.write(`*`);
+//   }
+//  document.write(`<br>`);
+// }
+// **********
+// *********
+// ********
+// *******
+// ******
+// *****
+// ****
+// ***
+// **
+// *
+
+// for (a=1; a<=5; a++){
+//   for (b=1; b<=5; b++){
+//     document.write(`*`);
+//   }
+//  document.write(`<br>`);
+// }
+// *****
+// *****
+// *****
+// *****
+// *****
+
+
+// for(a=1; a<=5; a++){
+//  for(b=1; b<=5; b++){
+
+//   if (a>=b)
+//   {
+//   document.write(b);
+//   }
+//    else
+//    {
+//     document.write(`*`);
+//   }
+// }
+// document.write(`<br>`);
+// }
+// 1****
+// 12***
+// 123**
+// 1234*
+// 12345
+
+
+// for (let a = 1; a<=5; a++){
+//   for (b = 1; b<=5; b++){
+//     //document.write(`*`);
+//     if (a==1 || b==1 || a==5 || b==5)
+//     {
+//       document.write(`*`);
+//     } else {
+
+//       document.write(`&nbsp;&nbsp;`);
+//     }
+//   }document.write(`<br>`);
+// }
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+
+
+
+
+
+// ============== 1 to 100 ===============
+
+
+//      for (b=1; b<=91; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }
+//  document.write(`<br>`);
+
+//      for (b=2; b<=92; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=3; b<=93; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=4; b<=94; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=5; b<=95; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=6; b<=96; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=7; b<=97; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=8; b<=98; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=9; b<=99; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }document.write(`<br>`);
+// for (b=10; b<=100; )
+// {
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//     b = b+10
+// }
+
+// ===================to convert value ======================
+// function convert(){
+//     var c = document.getElementById("data").value
+//     var f = (c * 1.8) + 32;
+//     document.getElementById("ans").innerText = `${c} = ${f} f`;
+// }
+// object
+// let a = [{id:"aaasnx", som: 13},
+//         { key:[{aka:"aakash", som: 12}]},
+//          {id:"Aptron", languages:["hindi","english", "bangali"]},
+//         {NAME:"AZWAD"} ]
+//           console.log(a[2].id);
+//           console.log(a[2].languages[1]);
+//           console.log(a[3].NAME)
+
+// for (b=1; b<=91; b+=10 )
+// { for (a=2; a<=; a+=10)
+//     document.write(b);
+
+//     document.write(`&nbsp`);
+//    //b = b+10
+// }document.write(`<br>`);
+
+
+
+// }
+//    ginti()
+// var count =1;
+//   for(i = 1; i<=100; i++){
+//     if(i>=91 && i<=100){
+//         document.write("<br>");
+//         for(j=count;j<=100;j++){
+//             document.write(j+"&nbsp &nbsp");
+//             j=j+9;
+//         }
+//         count=count+1;
+//     }
+
+//   }
+// ==============high ordered function===========
+// call back function;
+// function show ()
+// {
+//     return function () {console.log("aakash")}
+// }
+// var k = show()
+// k()
+
+
+// function show ()
+// {
+//     return function () {console.log("aakash")}
+// }
+// var k = show()
+// k()
+    </script>
+
+</body>
+
+</html>

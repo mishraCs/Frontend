@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form  method="post">
+        <label>Name</label>
+        <input type="text" name="" id="name" value="">
+        <button type="submit" id="submit">submit</button>
+    </form>
+    <h1>Name : <span id="bike"></span></h1>
+</body>
+<script>
+    let submit = document.getElementById("submit");
+submit.addEventListener("click", function(e) {
+    e.preventDefault();
+    let name = document.getElementById("name").value;
+
+document.getElementById("bike").innerHTML = name;
+
+});
+</script>
+</html>

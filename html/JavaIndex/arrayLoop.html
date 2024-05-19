@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .bordered {
+    border: 1px solid black;
+    padding: 5px;
+    display: inline-block;
+  }
+    </style>
+
+</head>
+<body>
+     <!-- <h1>Er. Aakash Mishra</h1> 
+
+     <p id="name2"></p>
+    <button onclick="profile()">My Name</button>
+    <button onclick="Institute()">My Institute</button>
+    <button onclick="table()">Table</button>
+    <p id="name1"></p> 
+    <p id="time"></p> -->
+    <!-- <p id="demo"></p> // for add 281 to 288 -->
+    <!-- <p id="Fblock"></p> -->
+    <script>
+
+        
+//        let choice = prompt("Enter your choice : Suggest me, wishMe, Time, only")
+
+// switch (choice)
+// {
+// case "Suggest me" : 
+// document.getElementsByTagName('p')[0].innerHTML = "Read carefully & take a great experience";
+// break;
+// case "wishMe" : 
+
+// function greeting (){
+// const d = new Date();
+// let currentTime = d.getHours();
+// if (currentTime>=4 && currentTime<12){
+// alert("Good Morning !!");}
+//    else if (currentTime>=12 && currentTime<16){
+//    alert("Good Afternoon !!");}
+// else if(currentTime>=16 && currentTime <22){
+//    alert("Good Evening !!");}
+// else if (currentTime>=22 && currentTime<4){
+//    alert("Good Night !!");}}
+//    greeting();
+// break;
+// case "Time" :
+// setInterval(myTimer, 1000);
+
+// function myTimer() {
+//   const d = new Date();
+//   document.getElementById("time").innerHTML = d.toLocaleTimeString();
+// }
+// break;
+// default  : 
+//  alert("Please choose right choice. whatever given your screen")
+// break;
+
+// } 
+
+
+//     function table() 
+//     {
+//     document.write("<table border='1'>")
+
+//     for (a=1; a<=3; a++)
+//     { 
+//     document.write("<tr>")
+//     for (b=2; b<=5; b++)
+//     {
+//     document.write("<td>")
+//     document.write(b*a);
+//     document.write("</td>")
+//     }
+//     document.write("</tr>")
+
+//     }
+
+//     document.write("<tr>")
+//     }
+
+
+//     function Institute (){
+
+//     document.getElementById("name1").innerHTML = "Aptron Institute";
+
+//     }
+
+//     function profile()
+//     {
+//     document.getElementById("name1").innerHTML = "Aptron"
+
+
+//     }
+
+
+
+// //callback hell
+
+// function register (){
+// return new Promise ((resolve, reject)=>{ 
+// setTimeout (()=>{
+// console.log("register done"); 
+// resolve();
+// }, 5000) 
+
+// })
+
+// }
+
+// function Login (){
+// return new Promise ((resolve, reject)=>{ 
+// setTimeout (()=>{
+// console.log("LogIn done"); 
+// resolve();
+// }, 2000) 
+
+// })
+
+// }
+// function Profile (){
+// return new Promise ((resolve, reject)=>{ 
+// setTimeout (()=>{
+// console.log("Profile done"); 
+// resolve();
+// }, 1000) 
+
+// })
+
+// }
+
+
+
+
+// // register()
+// // .then(() =>Login()).then(() => Profile());
+// async function auth ()
+// {
+    
+//          await register()
+//          await Login()
+//          await Profile()
+
+   
+// } 
+// auth();
+
+// //<strong>function</strong>
+
+// function changeValue()
+// {
+//      document.getElementById("demo").innerHTML = "Akash Mishra !";
+      
+    
+// }
+// changeValue();
+
+    
+    
+
+
+// // document.write("<table border='1'>");
+// // for (let a = 1; a <= 1; a++) {
+// //     document.write("<tr>");
+// //     for (let b = 1; b <= 100; b++) {
+// //         document.write("<td>");
+// //         document.write(b);
+
+// //         document.write("</td>");
+// //     }
+// //     document.write("</tr>");
+// // }    
+// // document.write("</table>");
+
+
+// var c = 1;
+// document.write("<table border='1' >");
+// for (a=1; a<=200; a++)
+// { if (a>=191 && a<=200){
+//     document.write("<tr>");
+//     for (b=c; b<=200; b++)
+//     { 
+//         document.write('<td class="bordered" style="width:20px">' + b + '</td>');
+//         b=b+9;
+//     }c = c+1;
+//     document.write("<tr>");
+//}}
+// document.write("</table>");
+// for (a = 1; a <= 100; a++) {
+//   if (a >= 91 && a <= 100) {
+//     document.write("<br>");
+//     for (b = a; b <= 100; b += 9) {
+//       document.write('<span class="bordered">' + b + '</span>&nbsp;');
+//     }
+//   }
+// }
+//document.write("<table border='1'>");
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 10 === 1) {
+//         document.write("<tr>"); // Start a new row every 10 numbers
+//     }
+
+//     document.write("<td>");
+//     document.write(i);
+//     document.write("</td>");
+
+//     if (i % 10 === 0) {
+//         document.write("</tr>"); // Close the row every 10 numbers
+//     }
+// }
+
+// document.write("</table>");
+
+// document.write("<table border='1'>");
+
+// let count = 1;
+
+// for (let row = 1; row <= 10; row++) {
+//     document.write("<tr>");
+//     for (let col = 1; col <= 10; col++) {
+//         document.write("<td>");
+//         document.write(count++);
+//         document.write("</td>");
+//     }
+//     document.write("</tr>");
+// }
+
+//  document.write("</table>");
+
+// document.write("<table border=2>")
+// for(a=1;a<=10;a++)
+// {
+//     document.write("<tr>")
+//     for(b=2;b<=20;b++)
+//     {
+//         document.write("<td>")
+//         document.write(b*a)
+//         document.write("</td>")
+//     }
+//     document.write("</tr>")
+// }
+// document.write("</table>") 
+//=======================map function====================
+// let item = new Array ("mobile, laptop, keyboard");
+// item.map((item,index,arr)=>{
+//     console.log(item,index,arr);
+
+// })
+// let item = new Array ("15, 16,13,34, 56");
+//  console.log(item)
+// let agearray = item.filter((item)=>{
+
+// return item>18
+// })
+// console.log(agearray);
+//=============array reduce sum==============
+// let n = [1,2,3,4,5,6,];
+// let sum = n.reduce((a,b)=>{
+//     return a+b;
+// })
+
+// console.log(sum);
+
+
+// let item = [];
+// item.push(items);
+// item.push(`mobile`, "laptop")
+// shift for delete, unshift
+// to delete between number in array (slice)
+// to define a number = (short)
+//======================= next all line is imp ==================
+
+// To control of code execution step in java script 
+
+// function sum(sum,sum)
+// {
+//   let pos = eval(prompt("write a number"));
+//   let neg = eval(prompt("write a number"));
+//   document.getElementById("demo").innerHTML = (pos + neg);
+
+// }
+//  sum();
+//console.log(sumAll);
+
+// below given that how execute a function program
+// setTimeout (function register ()
+// {
+//   console.log("registration is done");
+
+// },300)
+
+// function login ()
+// {
+//   console.log("login is done");
+
+// }
+
+// function profile ()
+// {
+//   console.log("profile is done");
+
+// }
+
+// register()
+// login()
+// profile()
+
+//==============================
+
+//  function register (cb)
+// { setTimeout(()=>{
+//   console.log("registration is done");
+//   cb();
+// },5000)
+
+
+// };
+
+// function login (cb)
+// { setTimeout(()=>{
+//   console.log("login is done");
+//   cb()
+// },3000)
+  
+
+// }
+
+// function profile ()
+// { setTimeout (()=>{
+//   console.log("profile is done");
+// },1000)
+
+// }
+
+// register(function(){
+//   login(function(){
+//     profile()
+//   })
+
+
+// }) 
+
+// when a function return a function called high ordered fun.
+
+// ==========To control code execution by setTimeout;===========
+// which code have setTime fun they go first web api========
+// in case of control code of execution in js we are use callback & new promise, await asunc; 
+// new keyword is use to object in promise fun
+// let a = 3, b;
+// let k = new Promise ((resolve,reject)=>
+// { setTimeout(()=>
+//   {
+//     b=30;
+//   reject("meassege");
+
+//   },100)
+  
+// }).then(()=>console.log(a+b)
+  
+
+// ).catch(()=>console.log("error=>", k)).finally(()=> console.log("done")) //  does not show error message
+
+// let a = 3, b;
+// let k = new Promise ((resolve,reject)=>
+// { setTimeout(()=>
+//   {
+//     b=20;
+//     b<30?resolve("welcome"):reject("go out")
+//   resolve("meassege");
+
+//   },100)
+  
+// }).then(()=>console.log(a+b)
+  
+
+// ).catch(()=>console.log("error=>", k)).finally(()=> console.log("done"))
+
+
+
+
+// new Promise((resolve,reject)=>{
+//   setTimeout ( function register ()
+// {
+//   console.log("registration is done");
+
+// },3000);
+// done();
+
+// })
+
+
+// setTimeout( function login ()
+// {
+//   console.log("login is done");
+
+// },2000);
+
+// setTimeout( function profile ()
+// {
+//   console.log("profile is done");
+
+// },1000);
+
+// register()
+// login()
+// profile()
+
+// api data array json object
+
+
+
+// fetch is return promise function]
+//xml in every code do start & close - must.
+//to convert json function
+
+// let result = fetch(`https://jsonplaceholder.typicode.com/posts`).then((response)=>response.json()).then((data)=>console.log(data));// promise through
+// json also return promise & this for we are use await
+// when we are use synck await there are not use ,then]
+
+// async function getdata()
+// {
+//   const res = await fetch (`https://jsonplaceholder.typicode.com/posts`)
+//   let data = await res.json()
+//   console.log(data);
+
+// }
+// getdata();
+
+
+//========== closure =================
+
+//closure is laxical scope/environment + function
+
+// function show()
+// {
+//   let a=30
+//   let z = 200
+//   function disp()
+//   {
+//     let b = 40
+   
+//     console.log(a+b+z);
+//   }
+//   disp()
+// }
+// //debugger;
+// show() // now this is a closure
+// imp point -> async wait how work, promise, fetch.
+
+// function show()
+// {
+//   let a=30
+//   function disp()
+//   {
+//     let b = 40
+//     console.log(a+b);
+//   }
+//   disp()
+// }
+
+// show()
+
+// =============function who calculate no. of execution a specific value (filter value)
+// let roll = [10,20,30,10,40,50,10];
+// let calculateRollSpecific = 0;
+// for (a=0; a<roll.length; a++)
+// {
+//   if (roll[a]==10){
+//   calculateRollSpecific++;
+//   console.log(roll[a]);
+//   }
+// }
+// console.log(`calculateRollSpecific : `,calculateRollSpecific);
+
+
+// let item = new Array ("mobile", "laptop", "keyboard", "mouse")
+// item.map((item,index,arr)=>{
+//   console.log(item,index,arr);
+// })
+
+// let data = new Array("laptop","keyboard","mouse")
+// console.log(data);
+// let newdata = data.filter((data)=>{
+//   return data!=="laptop"
+// })
+// console.log(newdata);
+
+// let n = [1,2,3,4,5];
+// let sum = n.reduce((a,b,c)=>{
+//   return a+b+c
+// })
+
+// console.log(sum);
+
+// let item = []
+// console.log("item");
+// item.push("mobile");
+// item.push("laptop", "call");
+// console.log(item);
+//  item.pop()
+//  console.log(item);
+// item.unshift("java");
+// console.log(item);
+// item.shift();
+// console.log(item);
+
+//console.log("aptron");
+
+
+// push end add, pop end delete, shift delete, unshift to add starting.
+//Array.include(), spread operator (...) must use, 
+
+// let fruits = ["Mango", "A,pple","Guvava", "Apple"];
+
+// console.log(fruits.includes("Mango"));
+
+// let fruits = ["Mango", "A,pple","Guvava", "Apple"];
+// let data = [...fruits, "man"]
+
+// console.log(data);
+
+// let fruits = ["Mango", "A,pple","Guvava", "Apple"];
+// let Human = ["Mango", "Apple","Guvava", "Apple"];
+// let fruitsHuman = [...fruits, ...Human, "man"]
+
+// console.log(data);
+// note : get is use to 
+
+// const student = ["Aakash","Kapil","Shubham","Ajendra"];
+// const StudentBond = student.join("-");
+// console.log(StudentBond); // make a data chain
+
+// let category1 = ["admin", "hr"];
+// let category2 = ["finance","marketing"];
+// let allDepartment = category1.concat(category2);
+// console.log(allDepartment);// add more than one array.
+
+// when nested array you want combine
+
+// let data = [[1,2],[4,5],[4,5],[4,5]];
+// let newData = data.flat()
+// console.log(newData); // to print multi array as normal;
+
+// splice - method can be used to add new items to an array; [slice - method slices out a piece of array]
+
+//first 2 define the posotion where new element should be added (spliced in).
+//the second parameter 0 defines how many elements should be removed.
+
+// let block = ["Amit","Anil","Ranjeet"];
+// block.splice(0,0,"Rahul");
+// console.log(block);
+
+//document.getElementById("Fblock").innerHTML = "block";
+
+// let block = ["Amit","Anil","Ranjeet"];
+// let citrus = block.slice(1,2);
+// console.log(citrus);
+
+// foreach
+
+// const fruits = ["mango", "apple", "guvava"];
+// fruits.forEach((fruit)=>{
+//   console.log(fruit);
+// })
+// const fruits = ["mango", "apple", "apple","guvava"];
+// console.log(fruits.indexOf("apple")+1);
+
+// To dynamic indexOf
+// const fruits = ["mango", "apple", "apple","guvava"];
+// console.log((fruits.indexOf("apple")+1)+1);
+
+// const fruits = ["mango", "apple", "apple","guvava"];
+// console.log(fruits.lastIndexOf("apple")+1);
+
+// const fruits = ["Mango", "Apple", "Apple","Guvava", "Orange"];
+// console.log(fruits.indexOf("apple")+1);
+
+//arguments first, item value, index position, 
+//complete array findIndex();
+
+
+// const fruits = [21,3,4,5,15,18,19,26,34];
+// // const num = fruits.findIndex(show)
+// const num = fruits.find(show)
+// console.log(num);
+
+
+// function show (value,index,array)
+// {
+//    return value>21;
+// }
+
+// array.keys;
+
+ //const fruits = ["mango", "apple", "apple","guvava"];
+ //console.log(fruits.includes("mango"));
+ //let d = fruits.keys()
+//  let d = fruits.entries()
+
+//  console.log(d);
+//  for (const x of d)
+//  {
+//   console.log(x);
+//  }
+
+// const fruits = ["Mango", "Apple", "Apple","Guvava"];
+// let data = [...fruits,"grapes"];
+// console.log(data);
+ 
+// console.log(d);
+//  for (const x of d)
+//  {
+//   console.log(x);
+//  }
+
+//const fruits = ["January","February","March","April"];
+
+// let d = new Date();
+// console.log(d);
+// console.log(d.getFullYear());
+// console.log(d.getDate());
+// console.log(d.getDay());
+// console.log(d.getHours());
+// console.log(d.getMilliseconds());
+// console.log(d.toLocaleDateString());
+// console.log(d.toLocaleTimeString());
+
+
+// ==========a function having no arguments and no return value
+
+// Declare a global variable
+// var message = "Hello";
+
+// // Define a function that changes the value of the global variable
+// function changeMessage() {
+//   message = "Goodbye";
+// }
+
+// // Call the function
+// changeMessage();
+
+// // Print the value of the global variable
+// console.log(message); // Goodbye
+// ==========a function having no arguments and no return value
+
+// ========== function having arguments and return value both
+
+// Define a function that takes length and width as parameters and returns area and perimeter as an array
+// function calculateAreaAndPerimeter(length, width) {
+//   let area = length * width;
+//   let perimeter = 2 * (length + width);
+//   return [area, perimeter];
+// }
+
+// // Call the function with some values
+// let result = calculateAreaAndPerimeter(3, 4);
+
+// // Print the result
+// console.log(result); // [12, 14]
+// ========== function having arguments and return value both
+
+
+// A function that having argument but no retutn value;
+// // A void function that takes a string as an argument and prints a greeting message
+// function greet(name) {
+//     console.log("Hello, " + name + "! Welcome to Bing AI.");
+// }
+
+// // The main program that calls the greet function
+// var user_name = prompt("Enter your name: "); // A variable to store the user name
+// greet(user_name); // Call the greet function with the user name as an argument
+// A function that having argument but no retutn value;
+
+
+// A function that have no arguments but hvave a return value;
+// A return function that takes no argument and returns a random number between 1 and 10
+// function random() {
+//     var num = Math.floor(Math.random() * 10) + 1; // A variable to store the random number
+//     return num; // Return the random number
+// }
+
+// The main program that calls the random function
+// var result = random(); // A variable to store the returned value
+// console.log("The random number is " + result + "."); // Print the result
+// A function that have no arguments but hvave a return value;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+     </script>
+    
+
+</body> 
+</html>   
